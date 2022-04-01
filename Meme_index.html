@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="Meme.css" />
+  </head>
+  <body>
+    <h1>Meme Generator</h1>
+    <br />
+    <h2>Fill out the forms below to generate an awesome meme in a flash!</h2>
+    <br />
+
+    <form action="submit" type="submit" id="createMeme">
+      <div>
+        <span class="formTxt">Add Your Image </span>
+        <input
+          type="url"
+          placeholder="Upload an Image URL here"
+          id="userImg"
+          style="height: 30px; width: 40%"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <span class="formTxt">Text On the Top</span>
+        <input
+          type="text"
+          placeholder="(Optional) Write something fun that will appear on the top of your Image"
+          id="topText"
+          style="height: 30px; width: 40%"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <span class="formTxt">Text on the Bottom</span>
+        <input
+          type="text"
+          placeholder="(Optional) Write something fun that will appear on the bottom of your Image"
+          id="botText"
+          style="height: 30px; width: 40%"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <input type="submit" value="Lets Make Magic ✨" id="magicButton" />
+      </div>
+    </form>
+
+    <br />
+
+    <div id="tiles" class="tiles">
+      <div class="tile">
+        <img
+          class="img-content"
+          src="https://ca-times.brightspotcdn.com/dims4/default/dd318d8/2147483647/strip/true/crop/3000x2400+0+0/resize/840x672!/format/webp/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe3%2F2e%2F61c32b56419fa7e7678f7cd11034%2F156973-2466.jpg"
+        />
+        <span class="topCaption">Top Caption</span>
+        <span class="bottomCaption">Bottom Caption</span>
+        <img class="deleteImage" src="x-icon.png" onclick="removeMeme(event)" />
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="Meme.js"></script>
+</html>
